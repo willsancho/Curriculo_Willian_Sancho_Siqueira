@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo - Willian Sancho Siqueira</title>
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- BARRA DE AÇÕES (Oculta automaticamente na impressão) -->
+    <div class="action-bar" id="actionBar">
+      <div class="action-bar-container">
+        <span class="action-title">Opções de Exportação / Impressão:</span>
+        <div class="action-buttons">
+          <button type="button" class="btn btn-primary" onclick="printCV('full')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            Imprimir Colorido (Original)
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="printCV('eco')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            Imprimir Econômico (Sem Fundo Escuro)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESTRUTURA PRINCIPAL DO CURRÍCULO -->
+    <div class="resume-container">
+      
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <header class="profile-header">
+          <h1 class="profile-name">Willian Sancho Siqueira</h1>
+          <p class="profile-title">Data Analyst | Data Engineering | BI</p>
+        </header>
+
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Contato</h2>
+          <address class="contact-list">
+            <div class="contact-item">
+              <span class="contact-label">Telefone / WhatsApp</span>
+              <a href="https://wa.me/5511985741851" target="_blank" rel="noopener noreferrer" class="contact-value">(11) 98574-1851</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:willsancho@msn.com" class="contact-value">willsancho@msn.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Localização</span>
+              <span class="contact-value">São Paulo, SP - Brasil</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/willian-sancho-siqueira" target="_blank" rel="noopener noreferrer" class="contact-value">
+                linkedin.com/in/willian-sancho-siqueira
+              </a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/willsancho" target="_blank" rel="noopener noreferrer" class="contact-value">
+                    github.com/willsancho
+                </a>
+            </div>
+          </address>
+        </section>
+        
+        <!-- Competências 
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Competências</h2>
+          <ul class="skills-list">
+            <li class="skill-tag">Engenharia de Dados (ETL/ELT)</li>
+            <li class="skill-tag">Python & SQL Avançado</li>
+            <li class="skill-tag">Airflow & Mage.ai</li>
+            <li class="skill-tag">Docker & MinIO (S3)</li>
+            <li class="skill-tag">Power BI & Metabase</li>
+            <li class="skill-tag">PostgreSQL & SQL Server</li>
+            <li class="skill-tag">MongoDB (NoSQL)</li>
+            <li class="skill-tag">Data Quality & QA</li>
+          </ul>
+        </section>
+        -->
+
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Formação</h2>
+          <article class="edu-item">
+            <h3 class="edu-degree">Bacharelado em Ciência de Dados</h3>
+            <p class="edu-school">Universidade Virtual do Estado de São Paulo (Univesp)</p>
+            <time class="edu-date">2024 - 2028 (Em andamento)</time>
+          </article>
+          <article class="edu-item">
+            <h3 class="edu-degree">MBA em Data Science e Analytics</h3>
+            <p class="edu-school">Universidade Nove de Julho (Uninove)</p>
+            <time class="edu-date">2023</time>
+          </article>
+          <article class="edu-item">
+            <h3 class="edu-degree">Bacharelado em Sistemas de Informação</h3>
+            <p class="edu-school">Universidade Nove de Julho (Uninove)</p>
+            <time class="edu-date">2011 - 2016</time>
+          </article>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+        <section class="content-section">
+          <h2 class="section-title">Resumo Profissional</h2>
+          <p class="summary-text">
+            Profissional de Dados com mais de 15 anos de experiência em Tecnologia, com atuação em análise de dados, BI, ETL e integração de sistemas. Experiência com SQL, Python, bancos de dados relacionais e NoSQL, desenvolvimento de processos de tratamento e carga de dados e criação de dashboards e indicadores. Ao longo da carreira, trabalhei com diferentes fontes e sistemas, automatizando processos e desenvolvendo soluções para apoiar áreas de negócio na análise e utilização dos dados.
+          </p>
+
+          <div class="highlight-box">
+            <ul>
+              <li><strong class="tech-stack">Dados & ETL:</strong> Python, SQL, Apache Airflow, SSIS e Talend; extração, tratamento, transformação e carga de dados.</li>
+              <li><strong class="tech-stack">BI & Analytics:</strong> Power BI, Metabase e Looker Studio; criação de dashboards, indicadores e relatórios para acompanhamento operacional e áreas de negócio.</li>
+              <li><strong class="tech-stack">Bancos de Dados:</strong> SQL Server, PostgreSQL, MySQL e MongoDB; consultas SQL, integração, tratamento e organização de dados.</li>
+              <li><strong class="tech-stack">Integração & Desenvolvimento:</strong> APIs, Python, Java, C#, Visual Basic, JavaScript, HTML e CSS.</li>
+              <li><strong class="tech-stack">Infraestrutura:</strong> Linux, Docker e Git.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <h2 class="section-title">Experiência Profissional</h2>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">Data Engineer / Data Analyst</h3>
+              <p class="job-company">Anjun Express Logistica e Transportes LTDA.</p>
+              <p class="job-meta">Maio/2025 – Outubro/2025 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Desenvolvimento de uma aplicação em <strong>Python</strong> para automatizar o acesso a uma ferramenta interna, realizar login e executar a extração de dados, gerando arquivos XLS para processamento.</li>
+              <li>Desenvolvimento de um fluxo de tratamento e integração dos dados extraídos, utilizando <strong>Python, MongoDB e PostgreSQL.</strong></li>
+              <li>Desenvolvimento de um pipeline utilizando <strong>Apache Airflow</strong> para automatizar e orquestrar as etapas de extração, processamento e carga dos dados.</li>
+              <li>Configuração de ambiente <strong>Linux</strong> e criação de ambientes conteinerizados com <strong>Docker</strong> para execução das aplicações e serviços utilizados no projeto.</li>
+              <li>Desenvolvimento de dashboards e relatórios utilizando <strong>Power BI, Metabase e Google Data Studio (Looker Studio)</strong> para acompanhamento do desempenho da operação logística.</li>
+              <li>Análise de indicadores operacionais, trabalhando com métricas previamente definidas pela operação e propondo novos indicadores para complementar as análises.</li>
+              <li>Apresentação dos resultados e indicadores para líderes de turno e diretor de operações, apoiando o acompanhamento do desempenho da operação.</li>
+            </ul>
+          </article>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">BI Analyst / Data Integrator</h3>
+              <p class="job-company">Vinx Incomporadora LTDA.</p>
+              <p class="job-meta">Agosto/2023 – Janeiro/2025 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Desenvolvimento de consultas em <strong>SQL Server</strong> para extração de dados do ERP utilizado pela empresa, atendendo inicialmente às necessidades de análise e acompanhamento da área financeira.</li>
+              <li>Criação e manutenção de dashboards no <strong>Power BI</strong>, utilizando dados do ERP para acompanhamento de indicadores e informações financeiras.</li>
+              <li>Desenvolvimento de processos de extração e tratamento de dados utilizando <strong>Python, Apache Airflow, PostgreSQL e Docker</strong>, com o objetivo de melhorar a qualidade dos dados do ERP e integrar informações de diferentes sistemas.</li>
+              <li>Integração e comparação de dados provenientes de diferentes sistemas para identificação de divergências e melhoria da qualidade das informações utilizadas pelas áreas de negócio.</li>
+              <li>Desenvolvimento de soluções de integração com o ERP por meio de sua API, permitindo o envio e recebimento de informações de forma mais estruturada.</li>
+              <li>Desenvolvimento de ferramentas internas com <strong>Python, HTML, CSS e JavaScript</strong> para auxiliar as equipes na integração e disponibilização de informações no ERP.</li>
+              <li>Criação de uma <strong>API própria em Python</strong> para apoiar as integrações e facilitar a comunicação entre as ferramentas desenvolvidas e os sistemas utilizados pela empresa.</li>
+              <li>Atendimento a demandas de dados de diferentes áreas, incluindo Financeiro, Marketing, Vendas e Jurídico, desenvolvendo extrações, integrações e soluções de acordo com as necessidades de cada equipe.</li>
+            </ul>
+          </article>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">Systems Analyst / Data Analyst</h3>
+              <p class="job-company">Nava Serviços e Outsourcing S.A.</p>
+              <p class="job-meta">Outubro/2016 – Dezembro/2022 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Configuração de ambientes <strong>Linux</strong> em máquinas virtuais utilizadas para execução das ferramentas e processos de dados.</li>
+              <li>Desenvolvimento e manutenção de processos de <strong>ETL</strong> utilizando <strong>Talend e Java</strong>, realizando extração, tratamento e carga de arquivos TXT em bancos <strong>MySQL.</strong></li>
+              <li>Desenvolvimento de rotinas para processamento e transformação dos dados antes da carga no banco de dados.</li>
+              <li>Criação e manutenção de relatórios e dashboards utilizando <strong>iReport/JasperReports</strong>, disponibilizando informações para acompanhamento das operações.</li>
+              <li>Adaptação dos processos de integração conforme mudanças nas ferramentas e sistemas utilizados pela empresa, trabalhando com diferentes formas de recebimento dos dados.</li>
+              <li>Integração de dados recebidos por diferentes meios, incluindo <strong>arquivos disponibilizados em rede, acesso direto a bancos de dados e dados disponibilizados pela equipe de desenvolvimento diretamente no banco utilizado pelos processos de ETL.</strong></li>
+              <li>Manutenção e ajustes dos processos de ETL conforme alterações nas estruturas e formatos das fontes de dados.</li>
+            </ul>
+          </article>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">Data Analyst | SQL Developer</h3>
+              <p class="job-company">DapX Intelligence for HealthCare</p>
+              <p class="job-meta">Março/2015 – Outubro/2015 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Desenvolvimento e manutenção da estrutura de dados em <strong>SQL Server</strong> para armazenamento e disponibilização das informações utilizadas pelas áreas de negócio.</li>
+              <li>Desenvolvimento de processos de <strong>ETL utilizando SSIS (SQL Server Integration Services)</strong> para extração e tratamento de dados provenientes de arquivos XLS e servidores FTP.</li>
+              <li>Criação de consultas <strong>SQL</strong> para extração, transformação e organização dos dados conforme as necessidades dos relatórios.</li>
+              <li>Desenvolvimento e manutenção de <strong>Queries e Stored Procedures</strong> utilizadas para disponibilizar as informações às áreas responsáveis pelos relatórios.</li>
+              <li>Tratamento e organização dos dados antes da disponibilização para análise e geração de relatórios em Excel.</li>
+            </ul>
+          </article>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">Intern / Software & Data Developer</h3>
+              <p class="job-company">Funcional Card LTDA</p>
+              <p class="job-meta">Setembro/2013 – Dezembro/2014 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Desenvolvimento de rotinas em <strong>Visual Basic (VB)</strong> para processamento e carga de dados provenientes de arquivos XLS.</li>
+              <li>Implementação de processos para importação e armazenamento dos dados em <strong>SQL Server.</strong></li>
+              <li>Desenvolvimento e manutenção de consultas SQL para extração e apoio às rotinas de dados.</li>
+              <li>Suporte às atividades de desenvolvimento e processamento de dados utilizadas pelos sistemas internos da empresa.</li>
+            </ul>
+          </article>
+
+          <article class="job-block">
+            <header class="job-header">
+              <h3 class="job-title">Intern / Data QA & Operations</h3>
+              <p class="job-company">LTM Fidelidade e Serviços Promocionais Ltda.</p>
+              <p class="job-meta">Dezembro/2011 – Março/2013 | São Paulo, Brasil</p>
+            </header>
+            <ul class="job-bullets">
+              <li>Apoio na identificação e correção de inconsistências em registros armazenados no <strong>SQL Server.</strong></li>
+              <li>Apoio na identificação e correção de bugs em aplicações desenvolvidas em <strong>C#.</strong></li>
+              <li>Suporte às atividades de manutenção e qualidade dos dados utilizados pelos sistemas da empresa.</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+    </div>
+  </body>
+</html>
